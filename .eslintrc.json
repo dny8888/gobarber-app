@@ -30,20 +30,40 @@
     ],
     "rules": {
       "react/jsx-props-no-spreading": "off",
+      "no-use-before-define": "off",
+      "no-unused-expressions": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/prop-types": "off",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
-      "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-      "import/prefer-default-export": "off",
-      "no-use-before-define": "off",
-      "prettier/prettier": "error",
-      "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-          "ts": "never",
-          "tsx": "never"
-        }
-      ]
+      "camelcase": "off",
+      "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "prettier/prettier": "warn",
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
     },
     "settings": {
       "import/resolver": {
